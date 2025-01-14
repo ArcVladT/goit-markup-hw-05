@@ -740,7 +740,7 @@ a {
   margin-bottom: 16px;
   margin-top: 0;
   top: 0;
-  transform: translateY(-230%);
+  transform: translateY(-830%);
 }
 
 .overlay .close-btn {
@@ -790,7 +790,7 @@ a {
   max-height: 336px;
 }
 
-.user-name-div {
+.overlay-form:nth-child(1) {
   margin-bottom: 8px;
   width: 360px;
   max-width: 360px;
@@ -798,7 +798,7 @@ a {
   padding: 0;
 }
 
-.user-name-div .input-div .input-name {
+.overlay-form:nth-child(1) .input-div .input-name {
   position: relative;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -808,15 +808,15 @@ a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-name-div .input-div {
+.overlay-form:nth-child(1) .input-div {
   position: relative;
 }
 
-.user-name-div .input-div .input-name:focus {
+.overlay-form:nth-child(1) .input-div .input-name:focus {
   border-color: #4d5ae5;
 }
 
-.user-name-div .input-div .icon {
+.overlay-form:nth-child(1) .input-div .icon {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -824,7 +824,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-name-div .label-user {
+.overlay-form:nth-child(1) .label-user {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -834,25 +834,25 @@ a {
   margin-bottom: 4px;
 }
 
-.user-name-div .input-div:focus-within .icon {
+.overlay-form:nth-child(1) .input-div:focus-within .icon {
   fill: #4d5ae5;
 }
 /* 
  */
 
-.input-phone {
+.overlay-form:nth-child(2) .input-div .input-name {
   width: 100%;
   height: 40px;
 }
 
-.phone-div {
+.overlay-form:nth-child(2) {
   margin-bottom: 8px;
   width: 360px;
   max-width: 360px;
   max-height: 58px;
 }
 
-.phone-div .input-div .input-phone {
+.overlay-form:nth-child(2) .input-div .input-name {
   position: relative;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -862,15 +862,15 @@ a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-div .input-div {
+.overlay-form:nth-child(2) .input-div {
   position: relative;
 }
 
-.phone-div .input-div .input-phone:focus {
+.overlay-form:nth-child(2) .input-div .input-name:focus {
   border-color: #4d5ae5;
 }
 
-.phone-div .input-div .icon {
+.overlay-form:nth-child(2) .input-div .icon {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -878,11 +878,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-div .input-div:focus-within .icon {
+.overlay-form:nth-child(2) .input-div:focus-within .icon {
   fill: #4d5ae5;
 }
 
-.phone-div .label-user {
+.overlay-form:nth-child(2) .label-user {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -898,23 +898,23 @@ a {
 }
 } */
 
-.input-email {
+.overlay-form:nth-child(3) .input-div .input-name {
   width: 100%;
   height: 40px;
 }
 
-.email-div {
+.overlay-form:nth-child(3) {
   margin-bottom: 8px;
   width: 360px;
   max-width: 360px;
   max-height: 58px;
 }
 
-.email-div .user-email {
+.overlay-form:nth-child(3) .user-name {
   color: 8e8F99;
 }
 
-.email-div .input-div .input-email {
+.overlay-form:nth-child(3) .input-div .input-name {
   position: relative;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -922,17 +922,18 @@ a {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 360px;
 }
 
-.email-div .input-div {
+.overlay-form:nth-child(3) .input-div {
   position: relative;
 }
 
-.email-div .input-div .input-email:focus {
+.overlay-form:nth-child(3) .input-div .input-name:focus {
   border-color: #4d5ae5;
 }
 
-.email-div .input-div .icon {
+.overlay-form:nth-child(3) .input-div .icon {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -940,11 +941,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-div .input-div:focus-within .icon {
+.overlay-form:nth-child(3) .input-div:focus-within .icon {
   fill: #4d5ae5;
 }
 
-.email-div .label-user {
+.overlay-form:nth-child(3) .label-user {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -952,6 +953,7 @@ a {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  margin-top: 8px;
 }
 /* 
  */
@@ -977,6 +979,10 @@ a {
   display: block;
 }
 
+.comment-div {
+  margin-bottom: 16px;
+}
+
 .comment-div textarea:focus {
   border-color: #4d5ae5;
 }
@@ -994,6 +1000,10 @@ a {
 
 */
 
+.privacy-div {
+  margin-bottom: 24px;
+}
+
 .privacy-div .label-user {
   font-weight: 400;
   font-size: 12px;
@@ -1002,7 +1012,6 @@ a {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
-  margin-top: 16px;
 }
 
 .svg-icon {
@@ -1049,7 +1058,7 @@ a {
   min-width: 169px;
   height: 56px;
   min-height: 56px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -1059,5 +1068,4 @@ a {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 20px;
 }
